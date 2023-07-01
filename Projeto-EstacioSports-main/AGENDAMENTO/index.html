@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulário-EstacioSports</title>
+    <!--- CSS link--->
+    <link rel="stylesheet" href="./css/reserva.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+  </head>
+  <body>
+    <section class="container">
+      <header><i class="fa-solid fa-basketball" style="color: #ff8c00;"></i> Reserva ESTACIO SPORTS</header>
+      <p class="paragrafo">*quando estiver concluida a reserva apresente-se no dia e no horário para confirmar sua presença</p>
+      <form action="./php/conexao.php" method="post" class="form" onsubmit=" return validarFormulario(event)">
+        <div class="input-box">
+          <label>Nome Completo*</label>
+          <input type="text" placeholder="Digite seu nome completo" name="nome" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email*</label>
+          <input type="text" placeholder="Digite seu email" id="email" name="email" required onblur="validarEmail()" onfocus="limparMensagemErroEmail()" />
+          <br>
+          <span id="email-error" class="error-message"></span>
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <label>Telefone*(DDD)</label>
+            <input type="number" placeholder="Digite seu telefone" name="telefone" id="telefone" required onfocus="limparMensagemErroTelefone()"/>
+            <br>
+            <span id="telefone-error" class="error-message"></span>     
+          </div>
+          <div class="input-box">
+            <label>Escolha uma data*</label>
+            <input type="date" name="data" required />
+          </div>
+          <div class="input-box">
+            <label>Escolha uma horário*</label>
+            <input type="time"  name="horario" required />
+          </div>
+          
+
+        </div>
+
+        <div class="person-box">
+            <h3>Escolha uma opção</h3>
+            <div class="person-option">
+                <div class="person">
+                    <input type="radio" id="check-aluno" name="pessoa" value="Aluno" checked />
+                    <label for="check-aluno">Aluno</label>
+                </div>
+                <div class="person">
+                    <input type="radio" id="check-visitante" name="pessoa" value="Visitante" />
+                    <label for="check-visitante">Visitante</label>
+                </div>
+                <div class="person">
+                    <input type="radio" id="check-professor" name="pessoa" value="Professor" />
+                    <label for="check-professor">Professor</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="input-box school">
+          <label>Matrícula</label>
+          <input type="number" placeholder="Digite sua matrícula" id="matricula" name="matricula" maxlength="12" required onfocus="limparMensagemErroMatricula()"/>
+          <br>
+          <span id="matricula-error" class="error-message"></span>
+          <div class="column">
+            <div class="select-box ajustes">
+              <select name="setor" required>
+                <option value="" hidden>Qual setor?</option>
+                <option value="academia">Academia</option>
+                <option value="piscina">Piscina</option>
+                <option value="futebol">Campo de futebol</option>
+              </select>
+            </div>
+            <div class="select-box ajustes">
+                <select name="campus" required>
+                  <option value="" hidden>Qual seu campus?</option>
+                  <option value="via-corpvs">Via corpvs</option>
+                  <option value="parangaba">Parangaba</option>
+                  <option value="centro">Centro</option>
+                </select>
+              </div>
+          </div>
+        </div>
+        <input type="submit" value="Reservar" class="btn-form" name="enviar">
+        <a href="./php/lista.php" class="links">Verifique Horário agendados</a>
+        <a href="https://websiteestacio.000webhostapp.com/" class="links">&#129092; voltar para EstacioSports</a>
+      </form>
+    </section>
+
+    <script>
+        function limparMensagemErroEmail() {
+          var errorSpanEmail = document.getElementById('email-error');
+          errorSpanEmail.innerText = '';
+        }
+  
+        function validarEmail() {
+          var email = document.getElementById('email').value;
+          var errorSpanEmail = document.getElementById('email-error');
+  
+          // Expressão regular para validar o formato do e-mail
+          var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+          // Verifica se o e-mail está vazio ou não corresponde ao formato esperado
+          if (email.trim() === '' || !emailRegex.test(email)) {
+            errorSpanEmail.innerText = 'Digite um e-mail válido!';
+            return false; // Impede o envio do formulário
+          }
+  
+          // Limpa a mensagem de erro do e-mail caso seja válido
+          errorSpanEmail.innerText = '';
+          return true; // Permite o envio do formulário
+        }
+  
+        function limparMensagemErroMatricula() {
+          var errorSpanMatricula = document.getElementById('matricula-error');
+          errorSpanMatricula.innerText = '';
+        }
+  
+        function limparMensagemErroTelefone() {
+          var errorSpanTelefone = document.getElementById('telefone-error');
+          errorSpanTelefone.innerText = '';
+        }
+  
+        function validarMatricula() {
+          var matricula = document.getElementById('matricula').value;
+          var errorSpanMatricula = document.getElementById('matricula-error');
+  
+          // Remove quaisquer espaços em branco da matrícula
+          matricula = matricula.replace(/\s/g, '');
+  
+          // Verifica se a matrícula tem 12 dígitos
+          if (matricula.length !== 12) {
+            errorSpanMatricula.innerText = 'A matrícula deve ter 12 dígitos!';
+            return false; // Impede o envio do formulário
+          }
+  
+          // Limpa a mensagem de erro da matrícula caso seja válida
+          errorSpanMatricula.innerText = '';
+          return true; // Permite o envio do formulário
+        }
+  
+        function validarTelefone() {
+          var telefone = document.getElementById('telefone').value;
+          var errorSpanTelefone = document.getElementById('telefone-error');
+  
+          // Remove quaisquer espaços em branco do telefone
+          telefone = telefone.replace(/\s/g, '');
+  
+          // Verifica se o telefone tem 11 ou 12 dígitos
+          if (telefone.length !== 11 && telefone.length !== 12) {
+            errorSpanTelefone.innerText = 'Digite um número válido com DDD!';
+            return false; // Impede o envio do formulário
+          }
+  
+          // Limpa a mensagem de erro do telefone caso seja válido
+          errorSpanTelefone.innerText = '';
+          return true; // Permite o envio do formulário
+        }
+  
+        function validarFormulario(event) {
+          var isValidMatricula = validarMatricula();
+          var isValidTelefone = validarTelefone();
+          var isValidEmail = validarEmail();
+  
+          if (!isValidMatricula || !isValidTelefone || !isValidEmail) {
+            event.preventDefault(); // Impede o envio do formulário se houver erros de validação
+          }
+        }
+      </script>
+  </body>
+</html>

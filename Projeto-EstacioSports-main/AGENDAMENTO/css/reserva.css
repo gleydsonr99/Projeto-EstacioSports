@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url(../img/fundo.jpeg);
+  background-repeat: no-repeat;
+}
+.container {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #0040ff2f;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+.container header {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #fff;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 10px #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 15px rgb(0, 225, 255);
+}
+
+.select-box select:focus{
+  box-shadow: 0 1px 15px rgb(0, 225, 255);
+}
+
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .person-box {
+  margin-top: 20px;
+}
+.person-box h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.person-option, .person) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .person {
+  column-gap: 5px;
+}
+.person input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.person input, .person label) {
+  cursor: pointer;
+}
+.person label {
+  color: #9f9999;
+}
+.school :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  padding: 0 15px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  color: #707070;
+  font-size: 1rem;
+}
+.form .btn-form {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(26,0, 156);
+}
+.form .btn-form:hover {
+  background: rgb(0, 4, 255);
+}
+
+.paragrafo{
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff7d;
+}
+
+.ajustes {
+  padding: 0 1px;
+  border-radius: 8px;
+}
+
+
+.links {
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.links:hover {
+  color: rgb(255, 255, 255);
+}
+
+.error-message {
+  color: red;
+}
+
+
+/* Responsivo */
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.person-option, .person) {
+    row-gap: 15px;
+  }
+}

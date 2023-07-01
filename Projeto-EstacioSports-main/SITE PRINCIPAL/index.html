@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstacioSports</title>
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- biblioteca swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+<!-----------------HEAD DA PARTE INICIAL DO SITE------------------------>
+
+ <!-- favicon logo -->
+  <link rel="shortcut icon" href="./icon/favicon.ico" type="image/svg+xml">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- css link -->
+  <link rel="stylesheet" href="./assets/css/style2.css">
+
+  <!-- preload das imagens-->
+  <link rel="preload" as="image" href="./assets/img/PISCINA.jpeg">
+  <link rel="preload" as="image" href="./assets/img/gym.jpeg">
+  <link rel="preload" as="image" href="./assets/img/campo.jpeg">
+
+<!------------------------ TERMINOU ---------------------------------->
+</head>
+
+
+<body>
+    
+
+<!----------------BODY DA PARTE INICIAL DO SITE-------------------------->
+
+ <!-- PRELOAD  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Estácio Sports</p>
+  </div>
+
+
+  <!-- TOP BAR  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span b3">
+          Estacio Sports, Fortaleza city, Ceará, BR
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span b3">Horário de funcionamento : 7:00 às 17:30 </span>
+      </div>
+
+      <a href="#" class="topbar-item link b1">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span b3">(85) 9 9230-3212</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="#" class="topbar-item link b1">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span b3">EstacioSports@alunos.br</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- HEADER -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#inicio" class="logo b1">
+        <img src="./assets/img/logo Estácio .PNG" width="160" height="50" alt="estácio - Home" class="b2">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo b1">
+          <img src="./assets/img/logo Estácio .PNG" width="160" height="50" alt="estácio - Home" class="b2">
+        </a>
+
+        <ul class="navbar-list">
+          
+          <li class="navbar-item">
+            <a href="#inicio" class="navbar-link hover-underline active b1">
+              <div class="separator"></div>
+
+              <span class="span b3">Ínicio</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#sobre" class="navbar-link hover-underline b1">
+              <div class="separator"></div>
+
+              <span class="span b3">Sobre Nós</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#modalidades" class="navbar-link hover-underline b1">
+              <div class="separator"></div>
+
+              <span class="span b3">Modalidades</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#planos" class="navbar-link hover-underline b1">
+              <div class="separator"></div>
+
+              <span class="span b3">Planos Sports</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#news" class="navbar-link hover-underline b1">
+              <div class="separator"></div>
+
+              <span class="span b3">Estacio News</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Contate-nos</p>
+
+          <address class="body-3">
+            Estacio Sports, Fortaleza city, <br>
+            Ceará 2384, BR
+          </address>
+
+          <p class="body-3 navbar-text">Horários: 8:00 - 15:10</p>
+
+          <a href="#" class="body-3 sidebar-link b1">EstacioSports@alunos.br</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Agendamento</p>
+
+          <a href="#" class="body-3 contact-number hover-underline b1">
+            (85) 9 9230-3212
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="https://estaciosports.000webhostapp.com" class="btn1 b1">
+        <span class="text text-1 b3">Comece Agora</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1 b3"></span>
+        <span class="line line-2 b3"></span>
+        <span class="line line-3 b3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- HERO -->
+
+      <section class="hero text-center" aria-label="home" id="inicio">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/img/PISCINA.jpeg" width="1880" height="950" alt="" class="img-cover b2">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Esportividade & Competição</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Equipamentos profissionais <br>
+              e qualificados
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+             os melhores personals de Fortaleza
+            </p>
+
+            <a href="https://estaciosports.000webhostapp.com" class="btn1 b1" >
+              <span class="text text-1 b3">Comece agora</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/img/gym.jpeg" width="1880" height="950" alt="" class="img-cover b2">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Diversão & Lazer</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Aulas práticas e muito Lazer <br>
+              feitos para você
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+             Escolha o horário que mais se adeque para você e venha fazer parte.
+            </p>
+
+            <a href="https://estaciosports.000webhostapp.com" class="btn1 b1">
+              <span class="text text-1 b3">Comece agora</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/img/campo.jpeg" width="1880" height="950" alt="" class="img-cover b2">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">treinamento & esforço</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+               Elevando o nível <br>
+              com dedicação e resultados
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              venha fazer parte do nosso time.
+            </p>
+
+            <a href="https://estaciosports.000webhostapp.com" class="btn1 b1">
+              <span class="text text-1 b3">Comece Agora</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after b1">
+          <img src="./assets/img/musculo.png" width="48" height="48" alt="booking icon b2">
+
+          <span class="label-2 text-center span b3">Treino e dedicação</span>
+        </a>
+
+      </section>
+
+    </article>
+  </main>
+
+  <!-- BACK TO TOP -->
+
+  <a href="#inicio" class="back-top-btn active b1" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+<!------------------TERMINOU A PARTE INICIAL------------------->
+
+
+
+<!-- ABOUT -->
+
+<section class="about s1" id="sobre">
+
+    <div class="image">
+        <img src="./assets/img/frente.jpeg" alt="">
+    </div>
+
+    <div class="content">
+        <span>Sobre Nós</span>
+        <h3 class="title ajuste">A sua melhor opção para levar <b class="cor">uma vida + saudável</b>
+        </h3>
+        
+        <p>Estamos em constante evolução para oferecer a melhor estrutura, os equipamentos mais modernos e professores certificados, para que cada aluno encontre sua melhor versão todos os dias. <b><i>#VemTreinar</i></b> com a gente. Seja bem-vindo à ESTACIO SPORTS !!!</p> 
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Equipamentos</h3>
+                <p>Equipamentos de treino funcional, máquinas de cardio, esteiras, bicicletas ergométricas e entre outros. projetados e pensados para você.</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Vida Saudável</h3>
+                <p>A saúde é um compromisso diário. Pequenas mudanças de hábito podem ter um impacto significativo a longo prazo.</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Estratégias</h3>
+                <p>Planejamento de rotina, dieta, profissionais disponíveis condicionados para sua evolução. Encontre atividades físicas que você goste, adequadas ao seu estilo de vida.</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Exercicíos</h3>
+                <p>Os exercícios físicos regulares são essenciais para fortalecer o corpo, melhorar a resistência cardiovascular, aumentar a flexibilidade e manter a massa muscular.</p>
+            </div>
+        </div>
+        <a href="#planos" class="btn1">Comece agora</a>
+        
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- MODALIDADES -->
+
+<section class="features s1" id="modalidades">
+
+    <h1 class="heading"> <span>Modalidades</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="./assets/img/bola.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="./assets/img/jogador-de-futebol.png" alt="">
+                <h3>Campo de Futebol</h3>
+                <p>participe de copas e torneios nas categorias sub-21 e profissional, consulte turmas e horários disponíveis.</p>
+                <a href="#" class="btn1">Inscreva-se</a>
+            </div>
+        </div>
+
+        <div class="box second">
+            <div class="image">
+                <img src="./assets/img/gym.jpeg" alt="">
+            </div>
+            <div class="content">
+                <img src="./assets/images/icon-2.png" alt="">
+                <h3>Academia Fitness</h3>
+                <p>máquinas, equipamentos e recursos para aprimorar o seu físico. Além disso, acompanhamento com nutricionista e trainners.</p>
+                <a href="#" class="btn1">Inscreva-se</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="./assets/img/piscina1.jpeg" alt="">
+            </div>
+            <div class="content">
+                <img src="./assets/img/nadador (1).png" alt="">
+                <h3>Pisicina Olímpica</h3>
+                <p>Aulas de natação, para iniciantes e intermediários. Toucas, roupas de banhos disponíveis para os alunos.</p>
+                <a href="#" class="btn1">Inscreva-se</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- PLANOS -->
+
+<section class="pricing s1" id="planos">
+
+    <div class="information">
+        <span>Planos Sports</span>
+        <h3 class="ajuste">Escolha seu plano preferido por um preço acessível   </h3>
+        <p>Toda a qualidade e praticidade para você, veja os recursos disponíveis da ESTACIO SPORTS e vem treinar com a gente.</p>
+        <p> <i class="fas fa-check"></i> Área de musculação e aeróbicos </p>
+        <p> <i class="fas fa-check"></i> Aulas de Natação </p>
+        <p> <i class="fas fa-check"></i> Planos de Dieta </p>
+        <p> <i class="fas fa-check"></i> Treinos de Futebol </p>
+        <p> <i class="fas fa-check"></i> Levar amigos para treinar com você </p>
+        <a href="#comentarios" class="btn1">Ver mais</a>
+    </div>
+
+    <div class="plan basic">
+        <h3>plano básico</h3>
+        <div class="price"><span>R$</span>40<span>/mês</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i> Área de musculação</p>
+        <p> <i class="fas fa-check"></i> Personal Training </p>
+        <p> <i class="fas fa-check"></i> Aulas de Natação </p>
+        <p> <i class="fas fa-check"></i> Planos de Dieta </p>
+        
+        <p> <i class="fas fa-times" style="color: #ffffff44;"></i> Treinos de Futebol </p>
+        <p> <i class="fas fa-times" style="color: #ffffff44;"></i> Treino com amigos </p>
+       </div>
+       <a href="#" class="btn1">Começar agora</a>
+    </div>
+
+    <div class="plan">
+        <h3>plano premium</h3>
+        <div class="price"><span>R$</span>90<span>/mês</span></div>
+       <div class="list">
+        <p> <i class="fas fa-check"></i> Área de musculação </p>
+        <p> <i class="fas fa-check"></i> Personal Training </p>
+        <p> <i class="fas fa-check"></i> Aulas de Natação</p>
+        <p> <i class="fas fa-check"></i> Planos de Dieta </p>
+        <p> <i class="fas fa-check"></i> Treinos de Futebol </p>
+        <p> <i class="fas fa-check"></i> Treino com amigos </p>
+
+       </div>
+       <a href="#" class="btn1">Começar agora</a>
+    </div>
+
+</section>
+
+
+
+
+<!-- TREINADORES -->
+
+<section class="trainers s1" id="treinadores">
+
+    <h1 class="heading"> <span>Treinadores e Profissionais</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="./assets/images/trainer-1.jpg" alt="">
+            <div class="content">
+                <span>Personal Trainer</span>
+                <h3>Jhonatan Queiroz </h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./assets/img/treinadora.webp" alt="">
+            <div class="content">
+                <span>Treinadora de Futebol</span>
+                <h3>Nicole Oliveira</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="./assets/images/trainer-4.jpg" alt="">
+            <div class="content">
+                <span>Nutricionista</span>
+                <h3>Alice Soares</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+          <img src="./assets/img/professorNatação.avif" alt="">
+          <div class="content">
+              <span>Professor de Natação</span>
+              <h3>Gustavo Pinheiro</h3>
+              <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="#" class="fab fa-twitter"></a>
+                  <a href="#" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+              </div>
+          </div>
+      </div>
+
+
+
+    </div>
+
+</section>
+
+
+
+<!-- SECTION BANNER INFORMAÇÕES -->
+
+<section class="banner s1">
+
+    <span>Junte-se a nós agora</span>
+    <h3>GANHE ATÉ 50% DE DESCONTO </h3>
+    <p>Para quem está matriculado em qualquer curso na estácio, a academia, piscina e campo de futebol são liberados totalmente gratuitos.</p>
+    <a href="#" class="btn1">Obter desconto</a>
+
+</section>
+
+
+
+<!-- COMENTÁRIOS -->
+
+<section class="review s1" id="comentarios">
+
+    <div class="information">
+        <span>Comentários</span>
+        <h3>O que nossos clientes dizem</h3>
+        <p>Todos os nossos serviços são com qualidade e pensados 100% na satisfação do cliente e sua experiência com a ESTACIO SPORTS !!!</p>
+        <a href="#" class="btn1">Veja mais</a>
+    </div>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <p>A estrutura é sensacional, todo o suporte vale a pena demaiss</p>
+                <div class="user">
+                    <img src="./assets/images/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>Henrique Araujo</h3>
+                        <span>Aluno Estacio Sports</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Todos aqueles equipamentos me deram até vontade de treinar</p>
+                <div class="user">
+                    <img src="./assets/images/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>Silvana Freitas</h3>
+                        <span>Aluna Estacio Sports</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Estou evoluindo muito graças aos meus treinadores</p>
+                <div class="user">
+                    <img src="./assets/images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>Joao Carvalho</h3>
+                        <span>Aluno Estacio Sports</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>a dieta da minha nutricionista não tem outra igual :) </p>
+                <div class="user">
+                    <img src="./assets/images/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>Paula Feitosa</h3>
+                        <span>Aluno Estacio Sports</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- NEWS -->
+
+<section class="blogs s1" id="news">
+
+    <h1 class="heading"> <span>Estacio News</span> </h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./assets/img/campeas.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">@EstacioSports</a> <span>|</span> <a href="#">21 de maio, 2023</a> </div>
+                    <h3>Alunas da Estacio são CAMPEÃS dos jubs 2023!!!</h3>
+                    <p>"Só tenho a agradecer a todo meu time que me apoio e a minha faculdade pelos treinos e por proporcionar tudo isso", diz ravena em entrevista.</p>
+                    <a href="#" class="btn1">Ler mais</a>
+                </div>
+            </div>
+            
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./assets/img/equipamentos.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">@EstacioSports</a> <span>|</span> <a href="#">25 de junho, 2023</a> </div>
+                    <h3>Equipamentos novos chegam na academia !!!</h3>
+                    <p>Cadeira abdutora, esteiras novas. Alunos, nossa academia está aprimorando...</p>
+                    <a href="#" class="btn1">Ler mais</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./assets/img/turmaNova.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">@EstacioSports</a> <span>|</span> <a href="#">30 de junho, 2023</a> </div>
+                    <h3>Novas turmas abertas para a Natação.</h3>
+                    <p>Hoje abriu-se turmas novas no horário de 8 horas da manhã, não perca a oportunidade...</p>
+                    <a href="#" class="btn1">Ler mais</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./assets/img/treinos.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">@EstacioSports</a> <span>|</span> <a href="#">10 de Abril, 2023</a> </div>
+                    <h3>Time de Futebol começa os treinos para Campeonato.</h3>
+                    <p>Nesta segunda-feira iniciou-se os treinamentos para a copa do sub-21 que acontecerá em agosto...</p>
+                    <a href="#" class="btn1">Ler mais</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="./assets/img/estacio.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">@EstacioSports</a> <span>|</span> <a href="#">24 de janeiro, 2023</a> </div>
+                    <h3>Iniciou o projeto <i>ESTACIO SPORTS</i> !!!</h3>
+                    <p>Contemplem essa nova iniciativa da universidade estácio de voltar-se para o lado esportivo dos alunos, venha fazer parte...</p>
+                    <a href="#" class="btn1">Ler mais</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- 
+  #FOOTER
+-->
+
+<section class="footer s1">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Sessões</h3>
+            <a class="links" href="#inicio">Ínicio</a>
+            <a class="links" href="#sobre">Sobre Nós</a>
+            <a class="links" href="#modalidades">Modalidades</a>
+            <a class="links" href="#planos">Plano Sports</a>
+            <a class="links" href="#treinadores">Treinadores</a>
+            <a class="links" href="#news">Estacio News</a>
+        </div>
+
+        <div class="box">
+            <h3>Horários</h3>
+            <p> Segunda : <i> 7:00am - 17:30pm </i> </p>
+            <p> Terça : <i> 7:00am - 17:30pm </i> </p>
+            <p> Quarta : <i> 7:00am - 17:30pm </i> </p>
+            <p> Quinta : <i> 7:00am - 17:30pm </i> </p>
+            <p> Sexta : <i> 7:00am - 17:30pm </i> </p>
+            <p> Sábado e Domingo : <i> fechado </i> </p>
+        </div>
+
+        <div class="box">
+            <h3>Contate-nos</h3>
+            <p> <i class="fas fa-phone"></i> +55 (85) 9 8834-1223 </p>
+            <p> <i class="fas fa-phone"></i> +55 (85) 9 9230-3212 </p>
+            <p> <i class="fas fa-envelope"></i> EstacioSports@alunos.br </p>
+            <p> <i class="fas fa-map"></i> fortaleza, Ceará - 60811-900 </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-instagram"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Notícias</h3>
+            <p>Inscreva-se para as atualizações mais recentes </p>
+            <form action="">
+                <input type="email" name="" class="email" placeholder="digite seu email" id="">
+                <input type="submit" value="Inscreva-se" class="btn1">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit">© EstacioSports - 2023 </div>
+
+
+
+
+
+
+
+
+
+<!-------------------JAVASCRIPT DA PARTE INICIAL DO SITE---------------->
+
+<!-- js link -->
+  <script src="./assets/js/script2.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<!-----------------------------TERMINOU--------------------------------->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="./assets/js/script.js"></script>
+
+
+
+
+</body>
+</html>
